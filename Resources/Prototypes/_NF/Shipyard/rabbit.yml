@@ -17,9 +17,9 @@
   category: Small
   group: Shipyard
   shuttlePath: /Maps/_NF/Shuttles/rabbit.yml
-  guidebookPage: ShipyardChisel
+  guidebookPage: 
   class:
-  - Transport
+  - Cargo
   engine:
   - Solar
 
@@ -29,7 +29,7 @@
   mapPath: /Maps/_NF/Shuttles/rabbit.yml
   minPlayers: 0
   stations:
-    Chisel:
+    Rabbit:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
