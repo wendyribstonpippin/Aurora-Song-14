@@ -19,7 +19,7 @@
   shuttlePath: /Maps/_NF/Shuttles/rabbit.yml
   guidebookPage: 
   class:
-  - Cargo
+  - Civilian
   engine:
   - Solar
 
