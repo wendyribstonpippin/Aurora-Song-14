@@ -1,0 +1,45 @@
+# Author Info
+# GitHub: wendyribstonpippin (https://github.com/wendyribstonpippin)
+# Discord: wendyribstonofpippin
+
+# Maintainer Info
+# GitHub: TBD
+# Discord: TBD
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: FlyingFox
+  parent: BaseVessel
+  name: WSY Flying Fox
+  description: "Nimble ship based on a Ratvarian reclaimer design. The adventurous salvager's choice, ideal for boarding asteroids and hauling crates."
+  price: 32000 # Aurora's Song - 29987 | Rounded up to 32000, for the fills, and to keep it affordable
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/flyingfox.yml
+  guidebookPage:
+  class:
+  - Salvage
+  - Cargo
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: FlyingFox
+  mapName: 'WSY Flying Fox'
+  mapPath: /Maps/_NF/Shuttles/flyingfox.yml
+  minPlayers: 0
+  stations:
+    Chisel:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Flying Fox {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

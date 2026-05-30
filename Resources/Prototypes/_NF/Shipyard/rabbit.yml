@@ -1,0 +1,44 @@
+# Author Info
+# GitHub: wendyribstonpippin (https://github.com/wendyribstonpippin)
+# Discord: wendyribstonofpippin
+
+# Maintainer Info
+# GitHub: TBD
+# Discord: TBD
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Rabbit
+  parent: BaseVessel
+  name: WSY Rabbit
+  description: "Wyvern Shipyards' leading product, a solar-powered racing shuttle with agressive acceleration and cornering. Seats two."
+  price: 12000 # Aurora's Song - 10087 | Rounded up to 12000, there really isn't much on this bad girl
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/rabbit.yml
+  guidebookPage: ShipyardChisel
+  class:
+  - Transport
+  engine:
+  - Solar
+
+- type: gameMap
+  id: Rabbit
+  mapName: 'WSY Rabbit'
+  mapPath: /Maps/_NF/Shuttles/rabbit.yml
+  minPlayers: 0
+  stations:
+    Chisel:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Rabbit {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
