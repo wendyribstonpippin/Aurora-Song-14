@@ -30,7 +30,7 @@
   mapPath: /Maps/_NF/Shuttles/flyingfox.yml
   minPlayers: 0
   stations:
-    Chisel:
+    FlyingFox:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
